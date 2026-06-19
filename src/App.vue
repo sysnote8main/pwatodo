@@ -4,6 +4,7 @@ import { useTodos } from './composables/useTodos'
 import TodoInput from './components/TodoInput.vue'
 import TodoItem from './components/TodoItem.vue'
 import TodoFooter from './components/TodoFooter.vue'
+import InstallButton from './components/InstallButton.vue'
 
 const {
   todos,
@@ -38,6 +39,7 @@ onUnmounted(() => {
     <header class="app__header">
       <h1 class="app__title">PwaTodo</h1>
       <p class="app__subtitle">Offline-ready task manager</p>
+      <InstallButton />
     </header>
 
     <main class="app__main">
